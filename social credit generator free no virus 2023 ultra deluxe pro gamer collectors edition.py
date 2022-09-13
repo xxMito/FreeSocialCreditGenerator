@@ -24,7 +24,7 @@ full_song_path = os.path.join(full_songs_dir, r)
 win.geometry("700x450")
 
 # Open the Image File
-bg = ImageTk.PhotoImage(file="tutorialspoint.png")
+bg = ImageTk.PhotoImage(file="flagcn.png")
 
 # Create a Canvas
 canvas = Canvas(win, width=700, height=3500)
@@ -37,7 +37,7 @@ canvas.create_text(450, 20, text="free social credit generator 2023", font=("Ari
 # Function to resize the window
 def resize_image(e):
    global image, resized, image2
-   image = Image.open("tutorialspoint.png")
+   image = Image.open("flagcn.png")
    resized = image.resize((e.width, e.height), Image.ANTIALIAS)
    image2 = ImageTk.PhotoImage(resized)
    canvas.create_image(0, 0, image=bg, anchor='nw')
