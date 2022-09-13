@@ -1,3 +1,3 @@
 # FreeSocialCreditGenerator
-This program is just a dumb joke/meme 
-so pls dont sue me 
+Is your social credit low? /n
+Then this free hack generator is for you!
