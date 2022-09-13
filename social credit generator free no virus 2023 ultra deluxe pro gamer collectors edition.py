@@ -5,7 +5,9 @@ from tkinter import *
 import playsound
 from PIL import ImageTk, Image
 
-songs_dir = 'C:/temp/songstemp'
+working_dir= os.getcwd()
+songs_dir = 'songs'
+full_songs_dir = os.path.join(working_dir, songs_dir)
 
 songs = os.listdir(songs_dir)
 songs_iterator = os.scandir(songs_dir)
@@ -15,7 +17,7 @@ songs_dirEntries = [x for x in songs_iterator]
 win = Tk()
 win.title('social credit generator free no virus 2023 ultra deluxe pro gamer collectors edition')
 r = random.choice(songs)
-full_song_dir = os.path.join(songs_dir, r)
+full_song_path = os.path.join(full_songs_dir, r)
 
 
 # Set the geometry of Tkinter Frame
@@ -47,7 +49,7 @@ win.bind("<Configure>", resize_image)
 
 def loopSound():
    while True:
-      playsound.playsound(full_song_dir, block=True)
+      playsound.playsound(full_song_path, block=True)
 
 
 loopThread = threading.Thread(target=loopSound, name='backgroundMusicThread')
